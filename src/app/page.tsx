@@ -3,7 +3,6 @@
 import { useEffect } from "react";
 import { HeroSection } from "@/components/sections/hero-section";
 import { TestimonialsSection } from "@/components/sections/testimonials-section";
-import { ComparisonSection } from "@/components/sections/comparison-section";
 import { AboutSection } from "@/components/sections/about-section";
 import { PriceSection } from "@/components/sections/price-section";
 import { GuaranteeSection } from "@/components/sections/guarantee-section";
@@ -22,7 +21,6 @@ export default function Home() {
         <HeroSection />
         <TestimonialsSection />
         <AboutSection />
-        <ComparisonSection />
         <PriceSection />
         <GuaranteeSection />
         <SergioSection />

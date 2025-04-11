@@ -7,16 +7,16 @@ export function ComparisonSection() {
   return (
     <section className="py-16 bg-[#0a0a2e]">
       <div className="container relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-12 max-w-6xl mx-auto relative">
           {/* Coluna 1: Espiritualidade Popular */}
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true, margin: "-100px" }}
-            className="bg-gray-200 rounded-2xl overflow-hidden p-12 flex flex-col h-full"
+            className="bg-gray-200 rounded-2xl overflow-hidden p-12 flex flex-col h-full relative mb-8 md:mb-0"
           >
-            <h3 className="text-4xl font-bold mb-10 text-gray-800" style={{ color: '#1f2937' }}>
+            <h3 className="text-4xl font-bold mb-10 text-gray-800 text-center md:text-left" style={{ color: '#1f2937' }}>
               Espiritualidade<br />popular
             </h3>
             
@@ -31,10 +31,26 @@ export function ComparisonSection() {
             </p>
           </motion.div>
           
-          {/* Separador Visual */}
-          <div className="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-            <div className="bg-stone-600 rounded-lg p-8">
-              <X className="w-12 h-12 text-blue-500" />
+          {/* Separador Visual para Mobile - posicionado entre os retângulos */}
+          <div className="md:hidden block absolute left-1/2 -translate-x-1/2 z-20" 
+            style={{ 
+              top: 'calc(50%)', 
+              transform: 'translateY(-50%) translateX(-50%)',
+              marginTop: '4px'
+            }}>
+            <div className="bg-[#57534e] rounded-lg p-3 shadow-lg" style={{ position: 'relative' }}>
+              <X className="w-6 h-6 text-blue-500" />
+            </div>
+          </div>
+          
+          {/* Separador Visual para Desktop - posicionado no meio dos retângulos */}
+          <div className="hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2 z-20" 
+            style={{ 
+              left: '50%', 
+              marginLeft: '-16px'
+            }}>
+            <div className="bg-[#57534e] rounded-lg p-2 shadow-lg">
+              <X className="w-8 h-8 text-blue-500" />
             </div>
           </div>
           
@@ -44,9 +60,9 @@ export function ComparisonSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true, margin: "-100px" }}
-            className="bg-gray-200 rounded-2xl overflow-hidden p-12 flex flex-col h-full"
+            className="bg-gray-200 rounded-2xl overflow-hidden p-12 flex flex-col h-full relative mt-8 md:mt-0"
           >
-            <h3 className="text-4xl font-bold mb-10 text-gray-800" style={{ color: '#1f2937' }}>
+            <h3 className="text-4xl font-bold mb-10 text-gray-800 text-center md:text-left" style={{ color: '#1f2937' }}>
               Método<br />TEAC
             </h3>
             

@@ -152,45 +152,41 @@ export function AboutSection() {
             {/* Exemplos de caso */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-16 border-t border-slate-200 pt-12">
               {/* Exemplo 1 */}
-              <div className="flex gap-6">
-                <div className="w-24 h-24 rounded-lg overflow-hidden shrink-0">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-36 h-36 rounded-lg overflow-hidden mb-4">
                   <Image 
                     src="/images/img1.jpg" 
                     alt="Pessoa confusa"
-                    width={100}
-                    height={100}
+                    width={150}
+                    height={150}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div>
-                  <h4 className="text-xl font-bold mb-2 text-slate-900">
-                    "Eu nem sei criar uma conexão espiritual, funciona pra mim?"
-                  </h4>
-                  <p className="text-slate-600">
-                    Só se você quiser começar do jeito certo e fazer suas conexões de forma segura.
-                  </p>
-                </div>
+                <h4 className="text-xl font-bold mb-2 text-slate-900">
+                  "Eu nem sei criar uma conexão espiritual, funciona pra mim?"
+                </h4>
+                <p className="text-slate-600">
+                  Só se você quiser começar do jeito certo e fazer suas conexões de forma segura.
+                </p>
               </div>
 
               {/* Exemplo 2 */}
-              <div className="flex gap-6">
-                <div className="w-24 h-24 rounded-lg overflow-hidden shrink-0">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-36 h-36 rounded-lg overflow-hidden mb-4">
                   <Image 
                     src="/images/img2.jpg" 
                     alt="Pessoa experiente"
-                    width={100}
-                    height={100}
+                    width={150}
+                    height={150}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div>
-                  <h4 className="text-xl font-bold mb-2 text-slate-900">
-                    "E pra mim, que já me conecto há anos?"
-                  </h4>
-                  <p className="text-slate-600">
-                    Só se você quiser elevar sua conexão mais do que nunca.
-                  </p>
-                </div>
+                <h4 className="text-xl font-bold mb-2 text-slate-900">
+                  "E pra mim, que já me conecto há anos?"
+                </h4>
+                <p className="text-slate-600">
+                  Só se você quiser elevar sua conexão mais do que nunca.
+                </p>
               </div>
             </div>
 
