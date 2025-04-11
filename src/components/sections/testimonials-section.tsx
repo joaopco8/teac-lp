@@ -32,7 +32,7 @@ export function TestimonialsSection() {
       <section className="py-16 bg-[#0a0a2e]">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               Ninguém que conseguiu a conexão espiritual é exceção. <span className="text-blue-400">E você também não será.</span>
             </h2>
           </div>

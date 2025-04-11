@@ -79,10 +79,12 @@ export function PriceSection() {
             </p>
 
             <div className="flex items-center justify-center gap-2">
-              <p className="text-5xl font-bold text-slate-900">12x <span className="text-[80px] leading-none">70</span>,<span className="text-3xl">82</span></p>
+              <p className="text-5xl font-bold text-slate-900 !text-slate-900" style={{ color: '#1e293b' }}>
+                12x <span className="text-[80px] leading-none !text-slate-900" style={{ color: '#1e293b' }}>70</span>,<span className="text-3xl !text-slate-900" style={{ color: '#1e293b' }}>82</span>
+              </p>
             </div>
 
-            <p className="text-slate-900 mt-2">ou R$697 à vista.</p>
+            <p className="text-slate-900 !text-slate-900 mt-2" style={{ color: '#1e293b' }}>ou R$697 à vista.</p>
           </div>
 
           <div className="mt-12 text-center">

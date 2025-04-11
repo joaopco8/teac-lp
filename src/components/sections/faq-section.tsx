@@ -45,10 +45,10 @@ export function FaqSection() {
     <section className="py-16 bg-gradient-to-b from-[#013558] to-[#012741]">
       <div className="container">
         <div className="text-center max-w-4xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             Ficou com alguma dúvida?
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-white">
             Confira as respostas para as perguntas frequentes ou entre em contato conosco:
           </p>
         </div>
@@ -64,9 +64,9 @@ export function FaqSection() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg uppercase">
+                  <h3 className="font-bold text-lg uppercase text-white">
                     ATENDIMENTO POR<br />
-                    <span className="text-green-500">WHATSAPP</span>
+                    <span className="text-green-500" style={{ color: '#22c55e' }}>WHATSAPP</span>
                   </h3>
                 </div>
               </div>
@@ -75,7 +75,7 @@ export function FaqSection() {
                 href="https://wa.me/5514998525760" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="block text-xl font-semibold text-center py-2 bg-slate-800/50 hover:bg-slate-700/50 rounded-lg transition-colors border border-slate-700/70"
+                className="block text-xl font-semibold text-center py-2 bg-slate-800/50 hover:bg-slate-700/50 rounded-lg transition-colors border border-slate-700/70 text-white"
               >
                 (14) 99852-5760
               </a>
@@ -100,7 +100,7 @@ export function FaqSection() {
               >
                 <details className="group">
                   <summary className="flex justify-between items-center cursor-pointer list-none">
-                    <span className="text-lg font-medium">{faq.question}</span>
+                    <span className="text-lg font-medium text-white">{faq.question}</span>
                     <span className="text-blue-400">
                       <Plus className="h-5 w-5 transform transition-transform group-open:rotate-45" />
                     </span>

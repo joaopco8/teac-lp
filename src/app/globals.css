@@ -15,10 +15,11 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* Desativando o modo escuro automático */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #171717;
   }
 }
 
@@ -30,33 +31,33 @@ body {
 
 @layer base {
   :root {
-    --background: 220 70% 10%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
 
-    --card: 220 70% 8%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
  
-    --popover: 220 70% 8%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
  
     --primary: 221.2 83.2% 53.3%;
     --primary-foreground: 210 40% 98%;
  
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
  
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
  
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
  
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 224.3 76.3% 48%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 142.1 76.2% 36.3%;
  
     --radius: 0.5rem;
   }
@@ -100,6 +101,46 @@ body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
     font-family: var(--font-sans);
+  }
+  
+  /* Garantir cor do texto em fundos escuros */
+  .bg-\[\#0a0a2e\] *:not(.bg-white *):not(.bg-gray-200 *):not(.rounded-lg.shadow-md.overflow-hidden.border.border-slate-200 *):not(.bg-\[\#f5f5f5\] *),
+  .bg-\[\#0a0a2e\]\/80 *:not(.bg-white *):not(.bg-gray-200 *):not(.bg-\[\#f5f5f5\] *),
+  .bg-\[\#013558\] *:not(.bg-white *):not(.bg-gray-200 *):not(.bg-\[\#f5f5f5\] *),
+  .bg-blue-600 *:not(.bg-white *):not(.bg-gray-200 *):not(.bg-\[\#f5f5f5\] *),
+  .bg-gradient-to-b.from-\[\#013558\].to-\[\#012741\] *:not(.bg-white *):not(.bg-gray-200 *):not(.bg-\[\#f5f5f5\] *) {
+    color: white;
+  }
+  
+  /* Preservar cores específicas */
+  .bg-\[\#0a0a2e\] *[class*="text-blue-"]:not(.bg-white *[class*="text-blue-"]), 
+  .bg-\[\#0a0a2e\]\/80 *[class*="text-blue-"]:not(.bg-white *[class*="text-blue-"]),
+  .bg-\[\#013558\] *[class*="text-blue-"]:not(.bg-white *[class*="text-blue-"]),
+  .bg-blue-600 *[class*="text-blue-"]:not(.bg-white *[class*="text-blue-"]),
+  .bg-gradient-to-b.from-\[\#013558\].to-\[\#012741\] *[class*="text-blue-"]:not(.bg-white *[class*="text-blue-"]),
+  span.text-blue-400, span.text-blue-500 {
+    color: #3b82f6 !important;
+  }
+  
+  /* Ajustar cores específicas */
+  span.text-blue-400 {
+    color: #3b82f6 !important;
+  }
+  
+  span.text-blue-300 {
+    color: #3b82f6 !important;
+  }
+  
+  span.text-blue-500 {
+    color: #3b82f6 !important;
+  }
+  
+  .bg-\[\#0a0a2e\] *[class*="text-green-"]:not(.bg-white *[class*="text-green-"]), 
+  .bg-\[\#0a0a2e\]\/80 *[class*="text-green-"]:not(.bg-white *[class*="text-green-"]),
+  .bg-\[\#013558\] *[class*="text-green-"]:not(.bg-white *[class*="text-green-"]),
+  .bg-blue-600 *[class*="text-green-"]:not(.bg-white *[class*="text-green-"]),
+  .bg-gradient-to-b.from-\[\#013558\].to-\[\#012741\] *[class*="text-green-"]:not(.bg-white *[class*="text-green-"]) {
+    color: #22c55e;
   }
 }
 

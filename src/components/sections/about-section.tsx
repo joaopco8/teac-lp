@@ -9,8 +9,8 @@ export function AboutSection() {
       <section className="py-16 bg-[#f5f5f5] relative pb-24">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-bold text-slate-900">
-              O QUE É A <span className="text-blue-500"><strong>METODOLOGIA TEAC?</strong></span>
+            <h2 className="text-3xl md:text-5xl font-bold text-slate-900" style={{ color: '#0f172a' }}>
+              O QUE É A <span className="text-blue-500" style={{ color: '#3b82f6' }}><strong>METODOLOGIA TEAC?</strong></span>
             </h2>
           </div>
 
@@ -30,56 +30,56 @@ export function AboutSection() {
               </div>
             </div>
             
-            <div className="space-y-8 text-slate-800">
+            <div className="space-y-8 text-slate-800" style={{ color: '#1e293b' }}>
              
 
-              <p className="text-xl">
-                O <span className="text-blue-500 font-bold">TEAC</span> tem tudo, muito além de vídeos, ativações e materiais. Você encontrará tudo o que precisa para se conectar sem intermediários.
+              <p className="text-xl" style={{ color: '#1e293b' }}>
+                O <span className="text-blue-500 font-bold" style={{ color: '#3b82f6' }}>TEAC</span> tem tudo, muito além de vídeos, ativações e materiais. Você encontrará tudo o que precisa para se conectar sem intermediários.
               </p>
 
               <div className="space-y-6 pl-6 border-l-2 border-blue-500">
                 {/* T - Tecnologia */}
                 <div>
-                  <h3 className="text-2xl mb-2 text-slate-900">
-                    <span className="text-blue-500 font-bold">T</span><strong>ecnologia</strong>
+                  <h3 className="text-2xl mb-2 text-slate-900" style={{ color: '#0f172a' }}>
+                    <span className="text-blue-500 font-bold" style={{ color: '#3b82f6' }}>T</span><strong>ecnologia</strong>
                   </h3>
-                  <p className="text-lg text-slate-700">
+                  <p className="text-lg text-slate-700" style={{ color: '#334155' }}>
                     Toda a conexão multidimensional é pautada em tecnologia.
                   </p>
                 </div>
 
                 {/* E - Espiritual */}
                 <div>
-                  <h3 className="text-2xl mb-2 text-slate-900">
-                    <span className="text-blue-500 font-bold">E</span><strong>spiritual</strong>
+                  <h3 className="text-2xl mb-2 text-slate-900" style={{ color: '#0f172a' }}>
+                    <span className="text-blue-500 font-bold" style={{ color: '#3b82f6' }}>E</span><strong>spiritual</strong>
                   </h3>
-                  <p className="text-lg text-slate-700">
+                  <p className="text-lg text-slate-700" style={{ color: '#334155' }}>
                     Acessar as informações além do que a realidade física oferece.
                   </p>
                 </div>
 
                 {/* A - Ascensional */}
                 <div>
-                  <h3 className="text-2xl mb-2 text-slate-900">
-                    <span className="text-blue-500 font-bold">A</span><strong>scensional</strong>
+                  <h3 className="text-2xl mb-2 text-slate-900" style={{ color: '#0f172a' }}>
+                    <span className="text-blue-500 font-bold" style={{ color: '#3b82f6' }}>A</span><strong>scensional</strong>
                   </h3>
-                  <p className="text-lg text-slate-700">
+                  <p className="text-lg text-slate-700" style={{ color: '#334155' }}>
                     Dominar informações que lhe farão romper o ciclo encarnacional terrestre.
                   </p>
                 </div>
 
                 {/* C - Canopeana */}
                 <div>
-                  <h3 className="text-2xl mb-2 text-slate-900">
-                    <span className="text-blue-500 font-bold">C</span><strong>anopeana</strong>
+                  <h3 className="text-2xl mb-2 text-slate-900" style={{ color: '#0f172a' }}>
+                    <span className="text-blue-500 font-bold" style={{ color: '#3b82f6' }}>C</span><strong>anopeana</strong>
                   </h3>
-                  <p className="text-lg text-slate-700">
+                  <p className="text-lg text-slate-700" style={{ color: '#334155' }}>
                     Acesse a egrégora sustentadora deste trabalho, os Canopeanos.
                   </p>
                 </div>
               </div>
 
-              <p className="text-lg italic text-slate-500">
+              <p className="text-lg italic text-slate-500" style={{ color: '#64748b' }}>
                 TEAC, a espiritualidade tecnológica.
               </p>
             </div>
@@ -94,7 +94,7 @@ export function AboutSection() {
             {/* Título e subtítulo */}
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900">
-                "SERÁ QUE O TEAC <span className="text-blue-500">PRA MIM?</span>"
+                "SERÁ QUE O TEAC É <span className="text-blue-500">PARA MIM?</span>"
               </h2>
               <p className="text-xl text-slate-700 max-w-3xl mx-auto">
                 Sem sombra de dúvidas, a Metodologia TEAC é pra você que...
@@ -129,7 +129,7 @@ export function AboutSection() {
                   </h3>
                 </div>
                 <p className="text-slate-600">
-                  sobre o que realmente acontece esse plano chamado de espiritualidade, sem filtros e sem manipulação.
+                  sobre o que realmente acontece nesse plano chamado de espiritualidade, sem filtros e sem manipulação.
                 </p>
               </div>
 
@@ -435,7 +435,7 @@ export function AboutSection() {
                 Gravação das lives privadas
               </h3>
               <p className="text-slate-600 mb-4">
-                Todas as lives que ocorreram no TEAC gravadas e disponibilizadas para você.
+                Todas as lives que ocorreram no TEAC estão gravadas e disponibilizadas para você.
               </p>
               
             </div>
@@ -448,7 +448,7 @@ export function AboutSection() {
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              VANTAGENS EXCLUSIVAS PARA <span className="text-blue-400">ALUNOS TEAC</span>
+              VANTAGENS EXCLUSIVAS PARA <span className="text-blue-400" style={{ color: '#3b82f6' }}>ALUNOS TEAC</span>
             </h2>
             
             <div className="bg-slate-800/50 rounded-xl p-8 shadow-lg border border-slate-700/50">
@@ -463,7 +463,7 @@ export function AboutSection() {
                 <div className="text-left md:flex-1">
                   <h3 className="text-2xl font-bold mb-2 text-center md:text-left">Desconto especial na Academia HQ</h3>
                   <p className="text-slate-300 text-lg">
-                    Ao se tornar um aluno TEAC, você automaticamente ganha acesso a <span className="text-blue-400 font-bold">descontos exclusivos</span> na maioria dos produtos e cursos da Academia HQ.
+                    Ao se tornar um aluno TEAC, você automaticamente ganha acesso a <span className="text-blue-400 font-bold" style={{ color: '#3b82f6' }}>descontos exclusivos</span> na maioria dos produtos e cursos da Academia HQ.
                   </p>
                 </div>
               </div>

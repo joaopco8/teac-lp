@@ -16,11 +16,11 @@ export function ComparisonSection() {
             viewport={{ once: true, margin: "-100px" }}
             className="bg-gray-200 rounded-2xl overflow-hidden p-12 flex flex-col h-full"
           >
-            <h3 className="text-4xl font-bold mb-10 text-gray-800">
+            <h3 className="text-4xl font-bold mb-10 text-gray-800" style={{ color: '#1f2937' }}>
               Espiritualidade<br />popular
             </h3>
             
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed" style={{ color: '#4b5563' }}>
               A espiritualidade popular, enraizada no
               fanatismo e na adoração cega, limita a
               autonomia e promove a manipulação. Ao
@@ -46,11 +46,11 @@ export function ComparisonSection() {
             viewport={{ once: true, margin: "-100px" }}
             className="bg-gray-200 rounded-2xl overflow-hidden p-12 flex flex-col h-full"
           >
-            <h3 className="text-4xl font-bold mb-10 text-gray-800">
+            <h3 className="text-4xl font-bold mb-10 text-gray-800" style={{ color: '#1f2937' }}>
               Método<br />TEAC
             </h3>
             
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed" style={{ color: '#4b5563' }}>
               O método TEAC oferece uma abordagem
               poderosa para se conectar com hierarquias
               espirituais pessoais, possibilitando a conquista

@@ -30,19 +30,19 @@ export function HeroSection() {
             <div className="flex flex-col gap-6 text-left">
               {/* Título Principal */}
               <div className="flex flex-col gap-2">
-                <h1 className="text-3xl md:text-4xl font-bold leading-tight">
-                Você Sente Que <span className="text-blue-400"> Falta Algo</span>
+                <h1 className="text-3xl md:text-4xl font-bold leading-tight text-white">
+                Você Sente Que <span className="text-blue-400" style={{ color: '#3b82f6' }}> Falta Algo </span>
                 </h1>
-                <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+                <h2 className="text-3xl md:text-4xl font-bold leading-tight text-white">
                 na Sua Conexão Espiritual?
                 </h2>
-                <h2 className="text-3xl md:text-4xl font-bold leading-tight">
-                Talvez Seja Porque Ainda <span className="text-blue-400"> Não Te Contaram Tudo…</span>
+                <h2 className="text-3xl md:text-4xl font-bold leading-tight text-white">
+                Talvez Seja Porque Ainda <span className="text-blue-400" style={{ color: '#3b82f6' }}> Não Te Contaram Tudo…</span>
                 </h2>
               </div>
 
               {/* Subtítulo */}
-              <p className="text-lg text-muted-foreground/80">
+              <p className="text-lg text-white">
               Você medita, faz limpezas energéticas, tenta se conectar… mas ainda sente que algo trava sua evolução? O problema não está em você. Está no sistema que te ensinaram a seguir. E se eu te mostrasse um caminho sem filtros, sem intermediários e sem manipulação?
               </p>
 
