@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 // Array com os caminhos das imagens de depoimentos
 const testimonialImages = [
@@ -16,7 +16,24 @@ const testimonialImages = [
 
 export function TestimonialsSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const imagesPerSlide = 3;
+  const [isMobile, setIsMobile] = useState(false);
+  
+  // Detectar se está em mobile
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkIfMobile();
+    window.addEventListener('resize', checkIfMobile);
+    
+    return () => {
+      window.removeEventListener('resize', checkIfMobile);
+    };
+  }, []);
+  
+  // Número de imagens por slide depende se é mobile ou desktop
+  const imagesPerSlide = isMobile ? 1 : 3;
   const totalSlides = Math.ceil(testimonialImages.length / imagesPerSlide);
   
   const nextSlide = () => {
@@ -44,46 +61,65 @@ export function TestimonialsSection() {
                 className="flex transition-transform duration-300 ease-in-out"
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
               >
-                {/* Dividir as imagens em grupos de 3 */}
-                {Array.from({ length: totalSlides }).map((_, slideIndex) => (
-                  <div key={slideIndex} className="w-full flex-shrink-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                    {testimonialImages
-                      .slice(slideIndex * imagesPerSlide, slideIndex * imagesPerSlide + imagesPerSlide)
-                      .map((imagePath, index) => (
-                        <div 
-                          key={index} 
-                          className="w-full rounded-xl overflow-hidden shadow-lg bg-white h-fit"
-                        >
-                          <Image
-                            src={imagePath}
-                            alt={`Depoimento ${slideIndex * imagesPerSlide + index + 1}`}
-                            width={500}
-                            height={670}
-                            className="w-full h-auto object-contain block"
-                            style={{ display: 'block' }}
-                          />
-                        </div>
-                      ))}
-                  </div>
-                ))}
+                {/* Carrossel Mobile (1 imagem por slide) ou Desktop (3 imagens por slide) */}
+                {isMobile ? (
+                  // Mobile - Uma imagem por slide
+                  testimonialImages.map((imagePath, index) => (
+                    <div key={index} className="w-full flex-shrink-0 px-4">
+                      <div className="w-full rounded-xl overflow-hidden shadow-lg bg-white h-fit">
+                        <Image
+                          src={imagePath}
+                          alt={`Depoimento ${index + 1}`}
+                          width={500}
+                          height={670}
+                          className="w-full h-auto object-contain block"
+                          style={{ display: 'block' }}
+                        />
+                      </div>
+                    </div>
+                  ))
+                ) : (
+                  // Desktop - Três imagens por slide
+                  Array.from({ length: totalSlides }).map((_, slideIndex) => (
+                    <div key={slideIndex} className="w-full flex-shrink-0 grid grid-cols-3 gap-6">
+                      {testimonialImages
+                        .slice(slideIndex * imagesPerSlide, slideIndex * imagesPerSlide + imagesPerSlide)
+                        .map((imagePath, index) => (
+                          <div 
+                            key={index} 
+                            className="w-full rounded-xl overflow-hidden shadow-lg bg-white h-fit"
+                          >
+                            <Image
+                              src={imagePath}
+                              alt={`Depoimento ${slideIndex * imagesPerSlide + index + 1}`}
+                              width={500}
+                              height={670}
+                              className="w-full h-auto object-contain block"
+                              style={{ display: 'block' }}
+                            />
+                          </div>
+                        ))}
+                    </div>
+                  ))
+                )}
               </div>
             </div>
             
             {/* Botões de navegação */}
             <button 
               onClick={prevSlide}
-              className="absolute -left-4 top-1/2 -translate-y-1/2 bg-white shadow-lg rounded-full p-3 z-10"
+              className="absolute -left-4 md:left-0 top-1/2 -translate-y-1/2 bg-white shadow-lg rounded-full p-2 md:p-3 z-10"
               aria-label="Depoimento anterior"
             >
-              <ChevronLeft size={24} className="text-gray-800" />
+              <ChevronLeft size={20} className="text-gray-800" />
             </button>
             
             <button 
               onClick={nextSlide}
-              className="absolute -right-4 top-1/2 -translate-y-1/2 bg-white shadow-lg rounded-full p-3 z-10"
+              className="absolute -right-4 md:right-0 top-1/2 -translate-y-1/2 bg-white shadow-lg rounded-full p-2 md:p-3 z-10"
               aria-label="Próximo depoimento"
             >
-              <ChevronRight size={24} className="text-gray-800" />
+              <ChevronRight size={20} className="text-gray-800" />
             </button>
             
             {/* Indicadores de slides */}
