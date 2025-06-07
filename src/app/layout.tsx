@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import ModalCountrySelector from "@/components/ModalCountrySelector";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -50,6 +51,7 @@ export default function RootLayout({
         {/* End Meta Pixel Code */}
       </head>
       <body className={`${rubik.variable} font-sans antialiased`}>
+        <ModalCountrySelector />
         <main>{children}</main>
       </body>
     </html>

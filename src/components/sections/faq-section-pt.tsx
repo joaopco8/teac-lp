@@ -40,7 +40,7 @@ const faqs = [
   },
 ]
 
-export function FaqSection() {
+export function FaqSectionPT() {
   return (
     <section className="py-16 bg-gradient-to-b from-[#013558] to-[#012741]">
       <div className="container">
@@ -83,7 +83,7 @@ export function FaqSection() {
             
             <div className="text-center pt-4">
               <a 
-                href="https://pay.hub.la/NOOiTYhnQcdZbytR5I0a?_path=%2Fr%2FEun1zKIRP22RP2ac4bRA" 
+                href="https://pay.hotmart.com/F99777157X?bid=1749058823036" 
                 className="inline-block w-full bg-[#96B853] hover:bg-blue-500 text-white font-bold py-4 px-6 rounded-lg text-lg transition-colors"
               >
                 JÁ QUERO GARANTIR MINHA VAGA
