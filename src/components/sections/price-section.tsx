@@ -69,22 +69,22 @@ export function PriceSection() {
         <div className="text-center max-w-3xl mx-auto">
           <div className="mb-4">
             <p className="text-xl text-blue-500 font-bold">O mais impressionante?</p>
-            <p className="text-2xl font-bold text-slate-900">Não vai custar R$997,00, mas apenas...</p>
+            <p className="text-2xl font-bold text-slate-900">Não vai custar R$1997,00, mas apenas...</p>
           </div>
 
           <div className="mb-8">
             <p className="text-center mb-2">
-              <span className="line-through text-slate-900 opacity-60">R$997,00</span>
-              <span className="bg-green-500 text-white text-sm rounded-full px-2 py-1 ml-2">R$300 OFF</span>
+              <span className="line-through text-slate-900 opacity-60">R$1997,00</span>
+              <span className="bg-green-500 text-white text-sm rounded-full px-2 py-1 ml-2">R$1200 OFF</span>
             </p>
 
             <div className="flex items-center justify-center gap-2">
               <p className="text-5xl font-bold text-slate-900 !text-slate-900" style={{ color: '#1e293b' }}>
-                12x <span className="text-[80px] leading-none !text-slate-900" style={{ color: '#1e293b' }}>70</span>,<span className="text-3xl !text-slate-900" style={{ color: '#1e293b' }}>82</span>
+                12x <span className="text-[80px] leading-none !text-slate-900" style={{ color: '#1e293b' }}>80</span>,<span className="text-3xl !text-slate-900" style={{ color: '#1e293b' }}>98</span>
               </p>
             </div>
 
-            <p className="text-slate-900 !text-slate-900 mt-2" style={{ color: '#1e293b' }}>ou R$697 à vista.</p>
+            <p className="text-slate-900 !text-slate-900 mt-2" style={{ color: '#1e293b' }}>ou R$797 à vista.</p>
           </div>
 
           <div className="mt-12 text-center">
