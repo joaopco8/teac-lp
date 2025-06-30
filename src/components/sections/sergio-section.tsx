@@ -14,6 +14,7 @@ export function SergioSection() {
                 src="/images/sergio.jpg"
                 alt="Sergio Oliveira"
                 fill
+                sizes="(max-width: 768px) 100vw, 600px"
                 className="object-cover"
                 priority
               />

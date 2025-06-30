@@ -26,6 +26,7 @@ export function AboutSection() {
                   width={600}
                   height={600}
                   className="w-full h-auto object-cover md:max-h-[450px]"
+                  sizes="(max-width: 768px) 100vw, 300px"
                 />
               </div>
             </div>
@@ -160,6 +161,7 @@ export function AboutSection() {
                     width={150}
                     height={150}
                     className="w-full h-full object-cover"
+                    sizes="(max-width: 768px) 100vw, 300px"
                   />
                 </div>
                 <h4 className="text-xl font-bold mb-2 text-slate-900">
@@ -179,6 +181,7 @@ export function AboutSection() {
                     width={150}
                     height={150}
                     className="w-full h-full object-cover"
+                    sizes="(max-width: 768px) 100vw, 300px"
                   />
                 </div>
                 <h4 className="text-xl font-bold mb-2 text-slate-900">
@@ -242,6 +245,7 @@ export function AboutSection() {
                   width={300}
                   height={200}
                   className="w-full h-auto object-cover mb-4"
+                  sizes="(max-width: 768px) 100vw, 300px"
                 />
                 <h4 className="font-bold text-slate-900 mb-2">Fundamentos essenciais</h4>
                 <p className="text-sm text-slate-600">
@@ -265,6 +269,7 @@ export function AboutSection() {
                   width={300}
                   height={200}
                   className="w-full h-auto object-cover mb-4"
+                  sizes="(max-width: 768px) 100vw, 300px"
                 />
                 <h4 className="font-bold text-slate-900 mb-2">Primeiras conexões espirituais</h4>
                 <p className="text-sm text-slate-600">
@@ -288,6 +293,7 @@ export function AboutSection() {
                   width={300}
                   height={200}
                   className="w-full h-auto object-cover mb-4"
+                  sizes="(max-width: 768px) 100vw, 300px"
                 />
                 <h4 className="font-bold text-slate-900 mb-2">A verdade sobre a Terra</h4>
                 <p className="text-sm text-slate-600">
@@ -311,6 +317,7 @@ export function AboutSection() {
                   width={300}
                   height={200}
                   className="w-full h-auto object-cover mb-4"
+                  sizes="(max-width: 768px) 100vw, 300px"
                 />
                 <h4 className="font-bold text-slate-900 mb-2">Hierarquia espiritual cósmica</h4>
                 <p className="text-sm text-slate-600">
@@ -337,6 +344,7 @@ export function AboutSection() {
                   width={300}
                   height={200}
                   className="w-full h-auto object-cover mb-4"
+                  sizes="(max-width: 768px) 100vw, 300px"
                 />
                 <h4 className="font-bold text-slate-900 mb-2">Missões cósmicas</h4>
                 <p className="text-sm text-slate-600">
@@ -360,6 +368,7 @@ export function AboutSection() {
                   width={300}
                   height={200}
                   className="w-full h-auto object-cover mb-4"
+                  sizes="(max-width: 768px) 100vw, 300px"
                 />
                 <h4 className="font-bold text-slate-900 mb-2">Conexões com ordens superiores</h4>
                 <p className="text-sm text-slate-600">
@@ -383,6 +392,7 @@ export function AboutSection() {
                   width={300}
                   height={200}
                   className="w-full h-auto object-cover mb-4"
+                  sizes="(max-width: 768px) 100vw, 300px"
                 />
                 <h4 className="font-bold text-slate-900 mb-2">Dominando a metodologia</h4>
                 <p className="text-sm text-slate-600">
@@ -406,6 +416,7 @@ export function AboutSection() {
                   width={300}
                   height={200}
                   className="w-full h-auto object-cover mb-4"
+                  sizes="(max-width: 768px) 100vw, 300px"
                 />
                 <h4 className="font-bold text-slate-900 mb-2">Prática avançada</h4>
                 <p className="text-sm text-slate-600">
@@ -424,6 +435,7 @@ export function AboutSection() {
                 width={500}
                 height={300}
                 className="w-full h-auto object-cover rounded-lg shadow-md"
+                sizes="(max-width: 768px) 100vw, 300px"
               />
             </div>
             <div className="flex flex-col justify-center">

@@ -19,6 +19,7 @@ export function HeroSectionPT() {
                 src="/images/logo teac.png"
                 alt="Logo TEAC"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-contain"
               />
             </div>
@@ -122,6 +123,7 @@ export function HeroSectionPT() {
               src="/images/logoacademiahq.png"
               alt="Logo Academia HQ"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-contain"
             />
           </div>
@@ -145,6 +147,7 @@ export function HeroSectionPT() {
               src="/images/img1.jpg"
               alt="Subidos - Evento"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
           </div>
@@ -156,6 +159,7 @@ export function HeroSectionPT() {
                   src="/images/img1.jpg"
                   alt="Subidos - Evento"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
@@ -164,6 +168,7 @@ export function HeroSectionPT() {
                   src="/images/img2.jpg"
                   alt="Subidos - Profissionais"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
